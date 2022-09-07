@@ -1,0 +1,44 @@
+@document.meta
+  title: Roadmap
+  description: Roadmap and vision for Taskwarrior integration into neorg
+  author: Stephen Bolton
+  created: 2022-09-07
+@end
+
+* Vision
+
+  This document will serve as a roadmap and plan of features for a Taskwarrior integration into
+  Neorg. It will be a mix of todos and documentation for the syntax and structure of the
+  integration.
+
+** Proposed Minimum Features
+   - See a list of tasks matching a taskwarrior filter
+   -- Inject tasks into {https://github.com/nvim-neorg/neorg/blob/main/docs/NFF-0.1-spec.md#carryover-tags}[Carryover Tags]
+   --- /Hopefully Treesitter integration makes this easily doable/
+   -- Use "view" approach like `:Neorg gtd views`
+   --- +I greatly prefer injection over views - Stephen+
+   - Create tasks from neorg and sync to Taskwarrior
+   - Support todos staying separate from Taskwarrior Todos
+   -- Not all todos have to be synced with Taskwarrior
+
+** Maybe/Someday Features
+   - Ability to use multiple Taskwarrior Databases
+   -- Work tasks vs personal tasks
+   - See Taskwarrior Reports from Neorg
+   -- +No rush on this since taskwarrior-vim exists - Stephen+
+
+** Syntax
+   /As syntax gets sorted it will be described here/
+
+* Roadmap
+** Create Taskwarrior client in nvim
+   - [ ] Plenary Job for creating todo item
+   There is an `import` command that takes in json to import tasks.
+   {https://taskwarrior.org/docs/commands/}[Mention in Docs]
+   Maybe We want the import for "bulk" operations and `task add ...` would be fine to start with?
+
+   - [ ] Plenary Job for exporting todos from Taskwarrior based on a filter
+   Taskwarrior has an `export` command we should be able to use for this.
+   {https://taskwarrior.org/docs/commands/export/}
+** Prototype injecting tasks into Carryover tags
+   - [ ] Ideate some examples of what `tw` carryover tags would look like
