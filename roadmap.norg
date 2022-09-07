@@ -18,6 +18,8 @@
    -- Use "view" approach like `:Neorg gtd views`
    --- +I greatly prefer injection over views - Stephen+
    - Create tasks from neorg and sync to Taskwarrior
+   - Edit tasks from neorg
+   -- Similar to how gtd module allows editing of tasks
    - Support todos staying separate from Taskwarrior Todos
    -- Not all todos have to be synced with Taskwarrior
 
